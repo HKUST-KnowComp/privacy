@@ -1,7 +1,7 @@
 baseURL: https://hkust-knowcomp.github.io/privacy/
 languageCode: en-us
 title: Team Privacy Checklist
-theme: ["PaperMod"]
+theme: ["hugo-PaperMod"]
 
 # Optional configurations for PaperMod theme
 params:
