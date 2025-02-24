@@ -1,0 +1,94 @@
+- name: "Yangqiu Song"
+  role: "Principal Investigator"
+  homepage: "https://www.cse.ust.hk/~yqsong/"
+  photo: "images/YangqiuSong.jpg"
+  affiliation: "HKUST"
+
+
+- name: "Haoran LI"
+  role: "Project Manager"
+  homepage: "https://hlibt.student.ust.hk/"
+  photo: "images/haoran2.jpg"
+  affiliation: "HKUST"
+
+
+- name: "Wei Fan"
+  role: "PhD Student"
+  homepage: "https://alexfan.cn"
+  photo: "images/wei_fan.jpg"
+  affiliation: "HKUST"
+
+- name: "Qi Hu"
+  role: "PhD Student"
+  homepage: "https://alexfan.cn"
+  photo: "images/image_huqi.jpg"
+  affiliation: "HKUST"
+
+- name: "Wenbin Hu"
+  role: "Research Assistant"
+  homepage: "https://whuak.github.io"
+  photo: "images/WenbinHu.png"
+  affiliation: "HKUST"
+
+
+- name: "Huihao Jing"
+  role: "Research Assistant"
+  homepage: "https://egbertjing.github.io/"
+  photo: "images/huihaojing.jpg"
+  affiliation: "HKUST"
+
+
+- name: "Jason Tsz Ho LI"
+  role: "Mphil Student"
+  homepage: "https://hlibt.student.ust.hk/"
+  photo: "images/jasonli.jpg"
+  affiliation: "HKUST"
+
+- name: "Dennis Hong Ting TSANG"
+  role: "Mphil Student"
+  homepage: "https://gzone0111.github.io/"
+  photo: "images/tsanghongting.jpg"
+  affiliation: "HKUST"
+
+- name: "Asif KHAN"
+  role: "Mphil Student"
+  homepage: "https://asifkhan.me/"
+  photo: "images/asifkhan.jpeg"
+  affiliation: "HKUST"
+
+- name: "Lucas Wun Yu CHAN"
+  role: "Mphil Student"
+  homepage: "https://lucaswychan.github.io"
+  photo: "images/lucaschanwy.jpg"
+  affiliation: "HKUST"
+
+- name: "Zirui Wang"
+  role: "Mphil Student"
+  homepage: "https://hlibt.student.ust.hk/"
+  photo: "images/anonymous.png"
+  affiliation: "HKUST"
+
+- name: "Fanpu Meng"
+  role: "Legal Contributor"
+  homepage: "https://www.linkedin.com/in/fanpu-meng-/"
+  photo: "images/fanpu.jpg"
+  affiliation: "University of Notre Dame Law School"
+
+- name: "Chang Liu"
+  role: "Legal Contributor"
+  homepage: "https://www.law.hku.hk/students/liu-chang/"
+  photo: "images/chang.jpg"
+  affiliation: "HKU Law School"
+
+
+- name: "Ziyi Chen"
+  role: "Contributor"
+  homepage: "https://hlibt.student.ust.hk/"
+  photo: "images/ziyi.jpg"
+  affiliation: "Independent"
+
+- name: "Yulin Chen"
+  role: "Contributor"
+  homepage: "https://scholar.google.com.hk/citations?user=AtlFU3kAAAAJ&hl=zh-CN"
+  photo: "images/yulin.jpg"
+  affiliation: "National University of Singapore"
