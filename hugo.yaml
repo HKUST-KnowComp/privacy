@@ -1,14 +1,4 @@
-baseURL: https://hkust-knowcomp.github.io/privacy/
+baseURL: https://example.org/
 languageCode: en-us
-title: Team Privacy Checklist
+title: My New Hugo Site
 theme: ["PaperMod"]
-
-# Optional configurations for PaperMod theme
-params:
-    customCSS: ["css/custom.css"]  # Add this line to load the custom CSS file
-    homeInfoParams:
-      Title: "AI Privacy & Safety Compliance from Pattern Matching to Reasoning"
-      Content: "We are members of KnowComp (Knowledge Computation) group at HKUST. We work on
-                Knowledge, reasoning in natural language processing,
-                Data mining and knowledge discovery,
-                Privacy and safety aspects."
