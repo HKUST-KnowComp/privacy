@@ -1,0 +1,497 @@
+.home-info h1 {
+  font-size: 4rem; /* 大标题字体 */
+  font-weight: bold; /* 加粗标题 */
+  text-align: center; /* 标题居中 */
+  color: var(--global-text-color); 
+  margin-bottom: 100px; /* 标题与正文间距 */
+  margin-top: 100px;
+  animation: fadeInDown 1.5s ease-in-out; /* 应用从上到下的动画 */
+}
+
+
+/* 正文动画样式 */
+.home-info p {
+  list-style-type: none; /* 去除默认的项目符号 */
+  opacity: 0;
+  font-size: 1.5rem; /* 正文字体 */
+  text-align: center; /* 正文居中 */
+  color: var(--global-p-color); /* 次要文字颜色 */
+  animation: fadeInUp 1.5s ease-in-out forwards; /* 应用从下到上的动画 */
+  margin-bottom: 20px; /* 标题与正文间距 */
+  animation-delay: 0.5s;
+}
+
+.papers {
+  list-style-type: none; /* 去除默认的项目符号 */
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards; /* 动画效果 */
+  animation-delay: 1s;
+  margin-bottom: 20px; /* 标题与正文间距 */
+}
+
+.links {
+  padding-left: 20px;
+  list-style-type: none; /* 去除默认的项目符号 */
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards; /* 动画效果 */
+  animation-delay: 1s;
+  margin-bottom: 20px; /* 标题与正文间距 */
+}
+
+.people {
+  list-style-type: none; /* 去除默认的项目符号 */
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards; /* 动画效果 */
+  animation-delay: 1s;
+  margin-bottom: 20px; /* 标题与正文间距 */
+}
+
+.person-card {
+  list-style-type: none; /* 去除默认的项目符号 */
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards; /* 动画效果 */
+  animation-delay: 1s;
+  margin-bottom: 20px; /* 标题与正文间距 */
+}
+
+
+/* 定义标题动画：从上到下 */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 定义正文动画：从下到上 */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.publications {
+  margin-top: 2rem
+}
+
+.publications h1 {
+  color: var(--global-theme-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em
+}
+
+.publications h2 {
+  margin-bottom: 1rem
+}
+
+.publications h2 span {
+  font-size: 1.5rem
+}
+
+.publications h2.bibliography {
+  color: var(--global-divider-color);
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  text-align: right;
+  display: none
+}
+
+.publications h2.year {
+  color: var(--global-divider-color);
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  text-align: right
+}
+
+.publications ol.bibliography {
+  list-style: none;
+  padding: 0;
+  margin-top: 0
+}
+
+.publications ol.bibliography li {
+  margin-bottom: .5rem
+}
+
+.publications ol.bibliography li .abbr {
+  height: 2rem;
+  margin-bottom: .5rem
+}
+
+.publications ol.bibliography li abbr.label {
+  display: inline-block;
+  background-color: var(--global-theme-color);
+  margin-bottom: .5rem
+}
+
+.publications ol.bibliography li abbr.label_1 {
+  background-color: var(--global-theme-color-outstanding); /* 设置为红色背景，或根据需要更改 */
+}
+
+
+
+.publications ol.bibliography li .abbr abbr a {
+  color: #fff
+}
+
+.publications ol.bibliography li .abbr abbr a:hover {
+  text-decoration: none
+}
+
+.publications ol.bibliography li .abbr .award {
+  color: var(--global-theme-color)!important;
+  border: 1px solid var(--global-theme-color)
+}
+
+.publications ol.bibliography li .title {
+  font-weight: bolder;
+  width: 500px; /* 卡片宽度 */
+  padding: 20px; /* 卡片内边距 */
+  border: 1px solid var(--global-text-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  background-color: var(--theme);
+  text-align: center;
+  overflow: hidden; /* 确保图片不溢出 */
+  position: relative; /* 为了定位图片 */
+  margin-bottom: 20px; /* 标题与正文间距 */
+}
+
+
+.publications ol.bibliography li .author a {
+  border-bottom: 1px dashed var(--global-theme-color)
+}
+
+.publications ol.bibliography li .author a:hover {
+  border-bottom-style: solid;
+  text-decoration: none
+}
+
+.publications ol.bibliography li .author>em {
+  border-bottom: 1px solid;
+  font-style: normal
+}
+
+.publications ol.bibliography li .author>span.more-authors {
+  color: var(--global-text-color-light);
+  border-bottom: 1px dashed var(--global-text-color-light);
+  cursor: pointer
+}
+
+.publications ol.bibliography li .author>span.more-authors:hover {
+  color: var(--global-text-color);
+  border-bottom: 1px dashed var(--global-text-color)
+}
+
+.publications ol.bibliography li .links a.btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin-left: 10px;
+}
+
+.publications ol.bibliography li .links a.abs_btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin-left: 10px;
+}
+
+.publications ol.bibliography li .links a.abs_btn:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color)
+}
+
+/* 图片容器样式 */
+.image-container {
+  max-height: 0; /* 初始最大高度为 0 */
+  text-align: center; /* 保证图片水平居中 */
+  max-width: 180%; /* 容器最大宽度，防止图片超出屏幕 */
+  margin: 0 auto; /* 居中 */
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* 淡入效果 */
+  margin-top: 30px;
+  opacity: 0; /* 初始透明度为 0 */
+}
+
+
+/* 鼠标悬停按钮时，展开图片并显示 */
+.abs_btn:hover + .image-container {
+  max-height: 1000px; /* 足够大的值确保显示完整图片 */
+  opacity: 1; /* 图片逐渐显现 */
+  transition-delay: 0s; /* 延迟显示图片 */
+}
+
+
+/* 图片样式 */
+.image-container img {
+  max-width: 200%; /* 图片占满父容器宽度 */
+  height: auto; /* 保持图片比例 */
+  display: inline-block; /* 居中对齐 */
+  border-radius: 10px; /* 圆角效果 */
+  transition: transform 0.5s ease-in-out; /* 平滑放大动画 */
+  transform: translateX(-25%);
+}
+
+
+.publications ol.bibliography li .links a.btn:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color)
+}
+
+.publications ol.bibliography li .links a.award.btn {
+  border-color: var(--global-highlight-color);
+}
+
+.publications ol.bibliography li .hidden {
+  font-size: .875rem;
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  transition-property: .15s ease;
+  -moz-transition: .15s ease;
+  -ms-transition: .15s ease;
+  -o-transition: .15s ease;
+  transition: all .15s ease
+}
+
+.publications ol.bibliography li .hidden p {
+  line-height: 1.4em;
+  margin: 10px
+}
+
+.publications ol.bibliography li .hidden pre {
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 10px
+}
+
+.publications ol.bibliography li .hidden.open {
+  max-height: 100em;
+  transition-property: .15s ease;
+  -moz-transition: .15s ease;
+  -ms-transition: .15s ease;
+  -o-transition: .15s ease;
+  transition: all .15s ease
+}
+
+.publications ol.bibliography li div.abstract.hidden {
+  border: dashed 1px var(--global-bg-color)
+}
+
+.publications ol.bibliography li div.abstract.hidden.open {
+  border-color: var(--global-text-color)
+}
+
+.publications ol.bibliography div.award.hidden {
+  border: dashed 1px var(--global-bg-color)
+}
+
+.publications ol.bibliography div.award.hidden.open {
+  border-color: var(--global-highlight-color)
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.btn {
+    transition: none
+}
+
+.btn-sm {
+  padding: .25rem .5rem;
+  display: inline-block;
+  border: 1px solid black;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  font-size: .8rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.col,.col-sm,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-8,.col-sm-9 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+@media (min-width: 576px) {
+  .col-sm {
+      -ms-flex-preferred-size:0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%
+  }
+
+  .col-sm-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%
+  }
+
+  .col-sm-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%
+  }
+
+  .col-sm-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%
+  }
+
+  .col-sm-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%
+  }
+
+  .col-sm-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm {
+      -ms-flex-preferred-size:0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%
+  }
+
+  .col-sm-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%
+  }
+
+  .col-sm-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%
+  }
+
+  .col-sm-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%
+  }
+
+  .col-sm-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%
+  }
+
+  .col-sm-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+
+
+
+/* Grid container for people section */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Individual person card styling */
+  .person-card {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+  }
+
+  .person-aff {
+    font-size: 1rem;
+    color: rgba(130, 130, 130, 0.607);
+  }
+
+
+  /* Style for the person's name inside the link */
+.person-card a .person-name {
+    color: #007acc; /* Set custom link color (blue in this case) */
+  }
+  
+  .person-card a:hover .person-name {
+    color: #ff6600; /* Change color on hover (orange in this case) */
+  }
+  
+  /* Style for the person's role (optional, if you want to adjust its color too) */
+  .person-card a .person-role {
+    color: #666; /* Set a neutral color for the role */
+  }
+ /* Resize all member photos to the same size */
+.person-photo {
+    width: 200px;            /* Set the desired width */
+    height: 200px;           /* Set the desired height */
+    object-fit: cover;       /* Ensure the image covers the box, cropping if necessary */
+
+    margin-bottom: 10px;     /* Add some space below the image */
+    display: block;          /* Ensure the image is displayed as a block element */
+    margin-left: auto;       /* Horizontally center the image */
+    margin-right: auto;      /* Horizontally center the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .people-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
