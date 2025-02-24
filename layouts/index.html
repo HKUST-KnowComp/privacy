@@ -1,0 +1,84 @@
+
+{{ define "main" }}
+  
+  <head>
+    <link rel="stylesheet" href="/css/custom.css">
+  </head>
+  
+  <div class="home-info">
+    <h1>{{ .Site.Params.homeInfoParams.Title }}</h1>
+    <p>{{ .Site.Params.homeInfoParams.Content }}</p>
+  </div>
+  <br>
+  <br>
+
+
+
+<!-- 
+  <h2 class="papers">Papers</h2>
+  <br>
+  <ul style="padding-left: 20px;" class="links">
+    {{ range site.Data.papers }}
+      <div class="publications">
+        <ol class="bibliography">
+          <li>
+            
+            <div class="row">
+              <div class="d-flex flex-column col-sm-2 abbr" style="min-width: 150px;"> 
+                <div class="col">
+                  <abbr class="badge rounded w-100 label">{{ .label }}</abbr>
+                </div>
+                {{ if .label_1 }}
+                <div class="col">
+                  <abbr class="badge rounded w-100 label_1">{{ .label_1 }}</abbr>
+                </div>
+                {{ end }}
+              </div>
+            
+              <div class="col-sm-8">
+                <div class="title">
+                  {{ .title }}
+                </div>
+                <div class="author">
+                  {{ .author }}
+                </div>
+                <div class="links">
+                  <a href="{{ .pdf }}" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">
+                    PDF
+                  </a>
+                  <a href="{{ .code }}" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">
+                    CODE
+                  </a>
+                  <a class="abs_btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">ABS</a>
+              
+                  <div class="image-container">
+                    <img src="{{ .picture }}" alt="Placeholder Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    {{ end }}
+  </ul>
+  <br>
+  <br> -->
+
+
+  <!-- List of People in a grid -->
+  <h2 class="people">People</h2>
+  <div class="people-grid">
+    {{ range site.Data.people }}
+     <div class="person-card">
+       <a href="{{ .homepage }}">
+         <img src="{{ .photo }}" alt="{{ .name }}" class="person-photo">
+         <p class="person-name">{{ .name }}</p>
+         <p class="person-role">{{ .role }}</p>
+         <p class="person-aff">{{ .affiliation }}</p>
+       </a>
+     </div>
+   {{ end }}
+ </div>
+
+{{ end }}
