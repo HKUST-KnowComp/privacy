@@ -1,6 +1,6 @@
-baseURL: https://example.org/
+baseURL: http://localhost:1313
 languageCode: en-us
-title: My New Hugo Site
+title: Team Privacy Checklist
 theme: ["PaperMod"]
 
 # Optional configurations for PaperMod theme
